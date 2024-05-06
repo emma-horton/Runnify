@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="module" src="./statistics.js"></script>
+    <link rel="stylesheet" href="statistics.css">
+    <title>Statistics Page</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="header">RUNNIFY</h1>
+    </header>
+
+    <div id="container">
+        <div id="profile" class="profile">
+            <div id="user-profile"></div>
+        </div>
+
+
+            <div id="div2" class="div2">
+                
+                <h3 class="full-width">Numbers Never Lie, especially when they're about running</h3>
+      
+                <select name="selectYear" id="selectYear"></select>
+                <div id="barChart"></div>
+                <div id="scatterChart"></div>
+                <div id="bestRunsTable">
+                    <table id="bestRunsTable">
+                        <tbody id="bestRunsBody">
+                            <!--Body populated dynamically-->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    
+
+
+        <div id="runsContainer" class="runsContainer">
+            <h3 style="text-align: center;">Yesterday's Journeys and Tomorrow's Adventures</h3>
+            <div id="form-container"></div>
+            <!-- Past Run Table -->
+            <div id="pastRuns">
+                <table id="pastRuns">
+                    <caption>Past Runs</caption>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Start Time</th>
+                            <th>Location</th>
+                            <th>Distance in KM</th>
+                            <th>Pace per Km</th>
+                        </tr>
+                    </thead>
+                    <tbody id="pastTableBody">
+                        <!-- Table body content will be populated dynamically -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Future Run Table -->
+            <div id="futureRuns">
+                <table id="futureRuns">
+                    <caption>Future Runs</caption>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Start Time</th>
+                            <th>Location</th>
+                            <th>Distance</th>
+                            <th>Pace</th>
+                        </tr>
+                    </thead>
+                    <tbody id="futureTableBody">
+                        <!-- Table body content will be populated dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    <div class="recommendations" id="recommendations">
+        <h3>Unleash Your Running Potential with these tips</h3>
+        <div id="videoDiv" class="videoDiv"></div>
+    </div>
+
+    </div>
+    
+    
+
+</body>
+
+</html>

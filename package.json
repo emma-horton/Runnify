@@ -1,0 +1,1 @@
+{"scripts":{"test":"mocha tests","start":"node main.js"},"dependencies":{"basic-auth":"^2.0.1","chai":"^4.3.7","chai-as-promised":"^7.1.1","chai-http":"^4.3.0","chain":"^0.4.0","express":"^4.19.2","express-basic-auth":"^1.2.1","express-session":"^1.18.0","jsdoc":"^4.0.2","mapbox-gl":"^3.2.0","mocha":"^10.2.0","mongodb":"^6.5.0"}}

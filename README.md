@@ -26,7 +26,7 @@ This project was developed by a group of five students as part of our coursework
 *	Users can sort runs on the feed page by pace and distance.
   
 <figure style="text-align: center; display: block;">
-    <img src="images/feed_page.png" alt="Feed Page" width="400">
+    <img src="images/feed_page.png" alt="Feed Page" width="500">
     <!-- <figcaption>Figure 2: The main feed page showing user activity.</figcaption> -->
 </figure>
 
@@ -34,7 +34,7 @@ This project was developed by a group of five students as part of our coursework
 *	Users can update their fitness goals and track their activity trends on the statistics page.
   
 <figure>
-    <img src="images/create_run.png" alt="Create Run Page" width="400">
+    <img src="images/create_run.png" alt="Create Run Page" width="500">
 <!--     <figcaption>Figure 3: User create run page.</figcaption> -->
 </figure>
 

@@ -49,9 +49,9 @@ npm run test
 
 ## Acknowledgements
 * [OpenWeather API](https://openweathermap.org/api): For providing weather information to predict conditions for future runs.
-* **GeoCoding API**: For supplying the longitude and latitude of the starting point, enabling the plotting of optimal running routes.
-* **MapBox**: For displaying the running routes on an interactive map.
-* **D3**: For generating the graphs displayed on the statistics page.
-* **SweetAlert2**: For creating interactive pop-ups and alerts.
-* **Sessions**: For tracking user activity across different pages.
-* **Mocha & Chai**: For performing automated testing of the application.
+* [GeoCoding API](https://openweathermap.org/api/geocoding-api): For supplying the longitude and latitude of the starting point, enabling the plotting of optimal running routes.
+* [MapBox](https://docs.mapbox.com/api/overview/): For displaying the running routes on an interactive map.
+* [D3](https://d3js.org/): For generating the graphs displayed on the statistics page.
+* [SweetAlert2](https://sweetalert2.github.io/): For creating interactive pop-ups and alerts.
+* [Sessions](https://www.npmjs.com/package/express-session): For tracking user activity across different pages.
+* [Mocha](https://mochajs.org/) & [Chai](https://www.chaijs.com/): For performing automated testing of the application.

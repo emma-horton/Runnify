@@ -1,6 +1,16 @@
 # Runnify
+A full-stack web application designed to let users track and share their running routes, times, and pace with the community.
 
+## Purpose 
+This project was developed by a group of five students as part of our coursework at the University of St Andrews, specifically to meet the requirements of an assigned task. The full-stack application uses JavaScript, HTML, CSS, Node.js, and MongoDB to build a responsive and interactive platform, enabling user communication and persistent data storage.
 
+## Features 
+*	Users can sign up and log in to the site.
+*	Users can view all runs on their feed page, including the meeting point, pace, route displayed on a map, participants, number of likes, and comment details.
+*	Users can join a run, like posts, and leave comments on the feed page.
+*	Users can create a new run by specifying the desired pace, start time, location, and distance. The app will generate an optimized route and display the expected weather for the run.
+*	Users can sort runs on the feed page by pace and distance.
+*	Users can update their fitness goals and track their activity trends on the statistics page.
 ## Instructions
 
 

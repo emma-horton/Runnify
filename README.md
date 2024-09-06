@@ -16,6 +16,7 @@ This project was developed by a group of five students as part of our coursework
 *	Users can create a new run by specifying the desired pace, start time, location, and distance. The app will generate an optimized route and display the expected weather for the run.
 *	Users can sort runs on the feed page by pace and distance.
 *	Users can update their fitness goals and track their activity trends on the statistics page.
+*	![Example Image](images/feed_page "Feed Page")
 ## Usage
 #### 1. Install modules and dependancies
 ```bash

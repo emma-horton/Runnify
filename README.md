@@ -14,8 +14,8 @@ This project was developed by a group of five students as part of our coursework
 <figure style="display: flex; flex-direction: column; align-items: center;">
     <!-- Flex container for images only -->
     <div style="display: flex; justify-content: center;">
-        <img src="images/sign_up_page.png" alt="Sign Up Page" width="400">
         <img src="images/login_page.png" alt="Login Page" width="400">
+        <img src="images/sign_up_page.png" alt="Sign Up Page" width="400">
     </div>
     <!-- Caption below images -->
 <!--     <figcaption>Figure 1: User login and sign in page.</figcaption> -->

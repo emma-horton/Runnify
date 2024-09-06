@@ -41,6 +41,17 @@ db.createRuns.drop()
 npm run test
 ```
 ## Technologies Used 
-* JavaScript: For handling the application logic, fetching data from the openWeather and GeoCoding API, and displaying running routes using MapBox.
-* HTML: For structuring the web application.
-* CSS: For styling the web application.
+* **JavaScript**: For handling the application logic, fetching data from the openWeather and GeoCoding API, and displaying running routes using MapBox.
+* **HTML**: For structuring the web application.
+* **CSS**: For styling the web application.
+* **Node.js**: For processing HTTP requests from the frontend (such as user logins, creating new runs, and liking posts), handling interactions with external APIs (e.g., fetching weather data from OpenWeather and geolocation data from the GeoCoding API), and interacting with MongoDB to store and retrieve persistent data.
+* **MongoDB**: For storing the application’s persistent data, including user information (such as usernames, passwords, and preferences), as well as data about the runs (such as route, pace, start time, distance, and participants). It also stores interactions like comments and likes associated with each run.
+
+## Acknowledgements
+* **OpenWeather API**: For providing weather information to predict conditions for future runs.
+* **GeoCoding API**: For supplying the longitude and latitude of the starting point, enabling the plotting of optimal running routes.
+* **MapBox**: For displaying the running routes on an interactive map.
+* **D3**: For generating the graphs displayed on the statistics page.
+* **SweetAlert2**: For creating interactive pop-ups and alerts.
+* **Sessions**: For tracking user activity across different pages.
+* **Mocha & Chai**: For performing automated testing of the application.

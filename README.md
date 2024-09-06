@@ -24,13 +24,15 @@ This project was developed by a group of five students as part of our coursework
 *	Users can view all runs on their feed page, including the meeting point, pace, route displayed on a map, participants, number of likes, and comment details.
 *	Users can join a run, like posts, and leave comments on the feed page.
 *	Users can sort runs on the feed page by pace and distance.
-<figure>
+  
+<figure style="text-align: center; display: block;">
     <img src="images/feed_page.png" alt="Feed Page" width="400">
-<!--     <figcaption>Figure 2: The main feed page showing user activity.</figcaption> -->
+    <!-- <figcaption>Figure 2: The main feed page showing user activity.</figcaption> -->
 </figure>
 
 *	Users can create a new run by specifying the desired pace, start time, location, and distance. The app will generate an optimized route and display the expected weather for the run.
 *	Users can update their fitness goals and track their activity trends on the statistics page.
+  
 <figure>
     <img src="images/create_run.png" alt="Create Run Page" width="400">
 <!--     <figcaption>Figure 3: User create run page.</figcaption> -->

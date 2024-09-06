@@ -54,3 +54,13 @@ npm run test
 * [SweetAlert2](https://sweetalert2.github.io/): For creating interactive pop-ups and alerts.
 * [Sessions](https://www.npmjs.com/package/express-session): For tracking user activity across different pages.
 * [Mocha](https://mochajs.org/) & [Chai](https://www.chaijs.com/): For performing automated testing of the application.
+
+## Contributers 
+|Name     |
+|---------|
+| Emma Horton  |
+| Teja Garrido |
+| Harry Huang  |
+| Phil Kolling |
+| Reanne Sutton|
+

@@ -11,12 +11,31 @@ This project was developed by a group of five students as part of our coursework
 
 ## Features 
 *	Users can sign up and log in to the site.
+<figure style="display: flex; flex-direction: column; align-items: center;">
+    <!-- Flex container for images only -->
+    <div style="display: flex; justify-content: center;">
+        <img src="images/sign_up_page.png" alt="Sign Up Page" width="400">
+        <img src="images/login_page.png" alt="Login Page" width="400">
+    </div>
+    <!-- Caption below images -->
+    <figcaption>Figure 1: User login and sign in page.</figcaption>
+</figure>
+
 *	Users can view all runs on their feed page, including the meeting point, pace, route displayed on a map, participants, number of likes, and comment details.
 *	Users can join a run, like posts, and leave comments on the feed page.
-*	Users can create a new run by specifying the desired pace, start time, location, and distance. The app will generate an optimized route and display the expected weather for the run.
 *	Users can sort runs on the feed page by pace and distance.
+<figure>
+    <img src="images/feed_page.png" alt="Feed Page" width="400">
+    <figcaption>Figure 2: The main feed page showing user activity.</figcaption>
+</figure>
+
+*	Users can create a new run by specifying the desired pace, start time, location, and distance. The app will generate an optimized route and display the expected weather for the run.
 *	Users can update their fitness goals and track their activity trends on the statistics page.
-*	![Example Image](images/feed_page "Feed Page")
+<figure>
+    <img src="images/create_run.png" alt="Create Run Page" width="400">
+    <figcaption>Figure 3: User create run page.</figcaption>
+</figure>
+
 ## Usage
 #### 1. Install modules and dependancies
 ```bash

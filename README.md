@@ -48,7 +48,7 @@ npm run test
 * **MongoDB**: For storing the application’s persistent data, including user information (such as usernames, passwords, and preferences), as well as data about the runs (such as route, pace, start time, distance, and participants). It also stores interactions like comments and likes associated with each run.
 
 ## Acknowledgements
-* **OpenWeather API**: For providing weather information to predict conditions for future runs.
+* [OpenWeather API](https://openweathermap.org/api): For providing weather information to predict conditions for future runs.
 * **GeoCoding API**: For supplying the longitude and latitude of the starting point, enabling the plotting of optimal running routes.
 * **MapBox**: For displaying the running routes on an interactive map.
 * **D3**: For generating the graphs displayed on the statistics page.

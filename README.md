@@ -1,5 +1,5 @@
 # Runnify
-A full-stack web application designed to let users track and share their running routes, times, and pace with the community.
+A full-stack web application designed to let users track and share their running routes, duration, and pace with the community.
 
 ## Purpose 
 This project was developed by a group of five students as part of our coursework at the University of St Andrews, specifically to meet the requirements of an assigned task. The full-stack application uses JavaScript, HTML, CSS, Node.js, and MongoDB to build a responsive and interactive platform, enabling communication between users and persistent data storage.
@@ -40,4 +40,7 @@ db.createRuns.drop()
 ``` bash 
 npm run test
 ```
-
+## Technologies Used 
+* JavaScript: For handling the application logic, fetching data from the openWeather and GeoCoding API, and displaying running routes using MapBox.
+* HTML: For structuring the web application.
+* CSS: For styling the web application.

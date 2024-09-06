@@ -28,16 +28,16 @@ $HOME/Documents/mongodb/bin/mongod --dbpath $HOME/Documents/mongodb_data --logpa
 ```bash
 node main.js
 ```
-### To run tests 
-#### drop all data in the database 
+#### To run tests 
+##### Firstly, drop all data in the database 
 ``` bash 
-
 mongosh --port $(id -u) -u webuser --authenticationDatabase admin -p
 use mainDatabase
 db.users.drop() 
 db.createRuns.drop()
 ```
+##### Then, run the chai test cases
+``` bash 
 npm run test
-```
 ```
 

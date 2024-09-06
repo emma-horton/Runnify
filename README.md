@@ -12,7 +12,6 @@ This project was developed by a group of five students as part of our coursework
 *	Users can sort runs on the feed page by pace and distance.
 *	Users can update their fitness goals and track their activity trends on the statistics page.
 ## Usage
-### Server
 #### Install modules and dependancies
 ```bash
 pip install node
@@ -21,12 +20,10 @@ npm install express-session
 npm install mocha chai
 npm install mongodb
 ```
-### MongoDB
 #### Connect to the database
 ```bash
 $HOME/Documents/mongodb/bin/mongod --dbpath $HOME/Documents/mongodb_data --logpath=$HOME/Documents/mongodb/mongodb.log --auth --port $(id -u) &
 ```
-### Start the localhost
 #### Start server
 ```bash
 node main.js

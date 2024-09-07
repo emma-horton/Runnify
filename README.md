@@ -84,11 +84,11 @@ npm run test
 * [Mocha](https://mochajs.org/) & [Chai](https://www.chaijs.com/): For performing automated testing of the application.
 
 ## Contributers 
-|Name     |
-|---------|
-| Emma Horton  |
-| Teja Garrido |
-| Harry Huang  |
-| Phil Kolling |
-| Reanne Sutton|
+|Name     |Task|
+|---------|---------|
+| Emma Horton  | Testing Server Endpoints, Calendar for Runs, Database Setup, Styling of Pages, Create endpoints on server |
+| Teja Garrido | Graphs Statistics, Styling of Pages |
+| Harry Huang  | Running Feed |
+| Phil Kolling | External weather API, Map API, Algorithm, Database Setup, Register Page, Login Page, Create endpoints on server, Helper Functions |
+| Reanne Sutton|External weather API, Database Setup, Register Page, Login Page, Styling of Pages, Create endpoints on server, Sessions |
 

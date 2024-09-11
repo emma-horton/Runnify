@@ -10,7 +10,8 @@ A full-stack web application developed to help runners organise social running a
 This project was developed by a group of five students as part of our coursework for the 'Masters Programming Projects' module at the University of St Andrews. The full-stack application uses JavaScript, HTML, CSS, Node.js, and MongoDB to build a responsive and interactive platform, enabling communication between users and persistent data storage.
 
 ## Features 
-*	Users can sign up and log in to the site.
+### Login and sign up page 
+*	Sign up and log in functionality is available, allowing access to the site.
 <figure style="display: flex; flex-direction: column; align-items: center;">
     <!-- Flex container for images only -->
     <div style="display: flex; justify-content: center;">
@@ -21,22 +22,26 @@ This project was developed by a group of five students as part of our coursework
 <!--     <figcaption>Figure 1: User login and sign in page.</figcaption> -->
 </figure>
 
-*	Users can view all runs on their feed page, including the meeting point, pace, route displayed on a map, participants, number of likes, and comment details.
-*	Users can join a run, like posts, and leave comments on the feed page.
-*	Users can sort runs on the feed page by pace and distance.
+### Feed page 
+* The feed page displays all runs, including meeting points, pace, routes on a map, participants, likes, and comments.
+* Runs can be joined, liked, and commented on directly from the feed page.
+* Sorting options by pace and distance are available to organize the runs on the feed.
   
 <figure style="text-align: center; display: block;">
     <img src="images/feed_page.png" alt="Feed Page" width="500">
     <!-- <figcaption>Figure 2: The main feed page showing user activity.</figcaption> -->
 </figure>
 
-*	Users can create a new run by specifying the desired pace, start time, location, and distance. The app will generate an optimized route and display the expected weather for the run.
-*	Users can update their fitness goals and track their activity trends on the statistics page.
+### Create runs page 
+* New runs can be created by specifying pace, start time, location, and distance. The app generates an optimized route and provides the expected weather forecast for the run.
   
 <figure>
     <img src="images/create_run.png" alt="Create Run Page" width="500">
 <!--     <figcaption>Figure 3: User create run page.</figcaption> -->
 </figure>
+
+### Statistics page 
+* Fitness goals can be updated, and activity trends tracked through the statistics page.
 
 ## Usage
 #### 1. Install modules and dependancies
@@ -68,27 +73,27 @@ db.createRuns.drop()
 npm run test
 ```
 ## Technologies Used 
-* **JavaScript**: For handling the application logic, fetching data from the openWeather and GeoCoding API, and displaying running routes using MapBox.
-* **HTML**: For structuring the web application.
-* **CSS**: For styling the web application.
-* **Node.js**: For processing HTTP requests from the frontend (such as user logins, creating new runs, and liking posts), handling interactions with external APIs (e.g., fetching weather data from OpenWeather and geolocation data from the GeoCoding API), and interacting with MongoDB to store and retrieve persistent data.
-* **MongoDB**: For storing the application’s persistent data, including user information (such as usernames, passwords, and preferences), as well as data about the runs (such as route, pace, start time, distance, and participants). It also stores interactions like comments and likes associated with each run.
+* **JavaScript**: Handles the application logic, retrieves data from the OpenWeather and GeoCoding APIs, and displays running routes using MapBox.
+* **HTML**: Structures the web application and ensures a well-organized layout.
+* **CSS**: Provides styling and layout for a visually appealing and responsive user interface.
+* **Node.js**: Processes HTTP requests from the frontend (e.g., user logins, creating new runs, liking posts) and manages interactions with external APIs like OpenWeather and GeoCoding. It also facilitates communication with MongoDB for storing and retrieving data.
+* **MongoDB**: Stores persistent data, including user information (e.g., usernames, passwords, preferences) and run-related data (e.g., route, pace, start time, distance, participants), as well as interactions like comments and likes.
 
 ## Acknowledgements
-* [OpenWeather API](https://openweathermap.org/api): For providing weather information to predict conditions for future runs.
-* [GeoCoding API](https://openweathermap.org/api/geocoding-api): For supplying the longitude and latitude of the starting point, enabling the plotting of optimal running routes.
-* [MapBox](https://docs.mapbox.com/api/overview/): For displaying the running routes on an interactive map.
-* [D3](https://d3js.org/): For generating the graphs displayed on the statistics page.
-* [SweetAlert2](https://sweetalert2.github.io/): For creating interactive pop-ups and alerts.
-* [Sessions](https://www.npmjs.com/package/express-session): For tracking user activity across different pages.
-* [Mocha](https://mochajs.org/) & [Chai](https://www.chaijs.com/): For performing automated testing of the application.
+* [OpenWeather API](https://openweathermap.org/api): Provides weather information used to predict conditions for future runs.
+* [GeoCoding API](https://openweathermap.org/api/geocoding-api): Supplies the longitude and latitude of the starting point, allowing the plotting of optimal running routes.
+* [MapBox](https://docs.mapbox.com/api/overview/): Displays the running routes on an interactive map for users to visualize their paths.
+* [D3](https://d3js.org/): Generates the graphs that are shown on the statistics page.
+* [SweetAlert2](https://sweetalert2.github.io/): Creates interactive pop-ups and alerts throughout the application.
+* [Sessions](https://www.npmjs.com/package/express-session): Tracks user activity across different pages to maintain session state.
+* [Mocha](https://mochajs.org/) & [Chai](https://www.chaijs.com/): Perform automated testing to ensure the application’s functionality and reliability.
 
 ## Contributers 
-|Name     |Task|
+|Name     |Contributions|
 |---------|---------|
-| Emma Horton  | Testing Server Endpoints, Calendar for Runs, Database Setup, Styling of Pages, Create endpoints on server |
-| Teja Garrido | Graphs Statistics, Styling of Pages |
-| Harry Huang  | Running Feed |
-| Phil Kolling | External weather API, Map API, Algorithm, Database Setup, Register Page, Login Page, Create endpoints on server, Helper Functions |
-| Reanne Sutton|External weather API, Database Setup, Register Page, Login Page, Styling of Pages, Create endpoints on server, Sessions |
+| Teja Garrido | Graphs Statistics, Styling of Pages. |
+| Emma Horton  | Testing Server Endpoints, Calendar for Runs, Database Setup, Styling of Pages, Create endpoints on server. |
+| Harry Huang  | Running Feed. |
+| Phil Kolling | External weather API, Map API, Algorithm, Database Setup, Register Page, Login Page, Create endpoints on server, Helper Functions. |
+| Reanne Sutton|External weather API, Database Setup, Register Page, Login Page, Styling of Pages, Create endpoints on server, Sessions. |
 

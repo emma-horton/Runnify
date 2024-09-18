@@ -1,8 +1,10 @@
 //const { userData } = require('./sampleData/sampleData.js');
 //console.log(userData)
 //Installing node modules
+// const MongoClient = require('mongodb').MongoClient;
+// const { ObjectId } = require('mongodb');
 const MongoClient = require('mongodb').MongoClient;
-const { ObjectId } = require('mongodb');
+const MongoStore = require('connect-mongo');
 const express = require('express');
 const session = require('express-session')
 
@@ -655,14 +657,26 @@ var sampleData =
 
 //Build our url from our config file info
 const config = require('./config-db.js');
-const url = `mongodb://${config.username}:${config.password}@${config.url}:${config.port}/${config.database}?authSource=admin`;
-const client = new MongoClient(url);
+// const url = `mongodb://${config.username}:${config.password}@${config.url}:${config.port}/${config.database}?authSource=admin`;
+// const client = new MongoClient(url);
 let collection = null; //we will give this a value after we connect to the database
 let users = null;
 
 //Set up our app
 const app = express();
-const API_PORT = 24475;
+const API_PORT = process.env.PORT || 24475;
+const mongoURI = process.env.MONGODB_URI;
+
+// Configure session to use MongoDB for session store
+app.use(session({
+  secret: 'i love running',
+  resave: false,
+  saveUninitialized: true,
+  store: MongoStore.create({
+      mongoUrl: mongoURI
+  }),
+  cookie: { secure: false } // Set to true if you're using HTTPS
+}));
 
 //middlware
 const ensureLoggedIn = (req, res, next) => {
@@ -679,12 +693,12 @@ const ensureLoggedIn = (req, res, next) => {
 //App.use
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
-app.use(session({
-    secret: "I love running", //used to sign the session ID cookie
-    resave: false, //session save only if modified suring the request
-    saveUninitialized: true, //new sessions saved to store even if not modified 
-    cookie: { secure: false } //cookie can be set over anny connection (does not require HTTPS)
-}));
+// app.use(session({
+//     secret: "I love running", //used to sign the session ID cookie
+//     resave: false, //session save only if modified suring the request
+//     saveUninitialized: true, //new sessions saved to store even if not modified 
+//     cookie: { secure: false } //cookie can be set over anny connection (does not require HTTPS)
+// }));
 //app.use((req,res,next)=>{console.log(`AppUse: Session ID is ${req.session.id}`);next();}) //Checks if session is working correctly
 app.use('/RunningFeed/cardPage.html', ensureLoggedIn);
 app.use('/createRuns/createRuns.html', ensureLoggedIn);
@@ -931,47 +945,81 @@ app.get('/logout', (req, res) => {
 
 app.use(express.static('client'))
 
-//Connecting to database
+// Connecting to the database
 function runApp() {
-    return client.connect()
-        .then(conn => {
-            //if the collection does not exist it will automatically be created
-            collection = client.db().collection(config.collection);
-            users = client.db().collection(config.users);
-            createRuns = client.db().collection('createRuns');
-            console.log("Connected!", conn.s.url.replace(/:([^:@]{1,})@/, ':****@'))
-        })
-        .catch(err => { console.log(`Could not connect to ${url.replace(/:([^:@]{1,})@/, ':****@')}`, err); throw err; })
-        
-        ////////////////////////////COMMENT ME OUT AFTER THE FIRST RUN/////////////////////////////////////////////////////////////////////
-        ///*
-        .then(() => {
-            return users.insertMany(sampleUser)
-            .then(res => console.log("Users inserted with IDs", res.insertedIds))
-            .catch(err => { 
-                console.log("Could not add users ", err.message); 
-                //For now, ingore duplicate entry errors, otherwise re-throw the error for the next catch
-                if (err.name != 'BulkWriteError' || err.code != 11000) throw err; 
-            })
-        })
-        .then(() => {
-            return collection.insertMany(sampleData)
-            .then(res => console.log("Data inserted with IDs", res.insertedIds))
-            .catch(err => { 
-                console.log("Could not add data ", err.message); 
-                //For now, ingore duplicate entry errors, otherwise re-throw the error for the next catch
-                if (err.name != 'BulkWriteError' || err.code != 11000) throw err; 
-            })
-        })
-        //*/
-        
-        /////////////////////////////////////////////////////////////////////////////////////////////////
-        
-        
-        // tell the server to listen on the given port and log a message to the console (so we can see our server is doing something!)
-        .then(() => app.listen(API_PORT, () => console.log(`Listening on localhost:${API_PORT}`)))
-        .catch(err => console.log(`Could not start server`, err))
+  MongoClient.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+      .then(client => {
+          console.log('Connected to Database');
+          const db = client.db();
+
+          // Initializing collections
+          const users = db.collection('users');
+          const createRuns = db.collection('createRuns');
+
+          // Example of setting up a route after a successful connection
+          app.get('/', (req, res) => {
+              users.find().toArray()
+                  .then(results => {
+                      res.json(results);
+                  })
+                  .catch(error => console.error('Error fetching data:', error));
+          });
+
+          // Start the server
+          app.listen(PORT, () => {
+              console.log(`Server running on port ${PORT}`);
+          });
+      })
+      .catch(error => {
+          console.error('Failed to connect to the database:', error);
+          process.exit(1); // Exit the process with an error code (1) if the connection fails
+      });
 }
-module.exports = { runApp }
+
+module.exports = { runApp };
+
+
+// //Connecting to database
+// function runApp() {
+//     return client.connect()
+//         .then(conn => {
+//             //if the collection does not exist it will automatically be created
+//             collection = client.db().collection(config.collection);
+//             users = client.db().collection(config.users);
+//             createRuns = client.db().collection('createRuns');
+//             console.log("Connected!", conn.s.url.replace(/:([^:@]{1,})@/, ':****@'))
+//         })
+//         .catch(err => { console.log(`Could not connect to ${url.replace(/:([^:@]{1,})@/, ':****@')}`, err); throw err; })
+        
+//         ////////////////////////////COMMENT ME OUT AFTER THE FIRST RUN/////////////////////////////////////////////////////////////////////
+//         ///*
+//         .then(() => {
+//             return users.insertMany(sampleUser)
+//             .then(res => console.log("Users inserted with IDs", res.insertedIds))
+//             .catch(err => { 
+//                 console.log("Could not add users ", err.message); 
+//                 //For now, ingore duplicate entry errors, otherwise re-throw the error for the next catch
+//                 if (err.name != 'BulkWriteError' || err.code != 11000) throw err; 
+//             })
+//         })
+//         .then(() => {
+//             return collection.insertMany(sampleData)
+//             .then(res => console.log("Data inserted with IDs", res.insertedIds))
+//             .catch(err => { 
+//                 console.log("Could not add data ", err.message); 
+//                 //For now, ingore duplicate entry errors, otherwise re-throw the error for the next catch
+//                 if (err.name != 'BulkWriteError' || err.code != 11000) throw err; 
+//             })
+//         })
+//         //*/
+        
+//         /////////////////////////////////////////////////////////////////////////////////////////////////
+        
+        
+//         // tell the server to listen on the given port and log a message to the console (so we can see our server is doing something!)
+//         .then(() => app.listen(API_PORT, () => console.log(`Listening on localhost:${API_PORT}`)))
+//         .catch(err => console.log(`Could not start server`, err))
+// }
+// module.exports = { runApp }
 
 

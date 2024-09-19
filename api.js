@@ -658,7 +658,7 @@ var sampleData =
 
 //Build our url from our config file info
 const config = require('./config-db.js');
-const url = process.env.MONGO_URI || `mongodb+srv://emmahorton03:wc8zzJKOdmpMDxE1@reunify.50cg9.mongodb.net/?retryWrites=true&w=majority&ssl=true&appName=reunify`;
+const url = process.env.MONGO_URI || config.url;
 const client = new MongoClient(url, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -989,8 +989,8 @@ function runApp() {
     return client.connect()
         .then(conn => {
             //if the collection does not exist it will automatically be created
-            collection = client.db().collection(config.collection);
-            users = client.db().collection(config.users);
+            collection = client.db().collection('createRuns');
+            users = client.db().collection('users');
             createRuns = client.db().collection('createRuns');
             console.log("Connected!", conn.s.url.replace(/:([^:@]{1,})@/, ':****@'))
         })

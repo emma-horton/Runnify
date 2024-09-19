@@ -662,8 +662,7 @@ const url = process.env.MONGO_URI || `mongodb+srv://emmahorton03:wc8zzJKOdmpMDxE
 const client = new MongoClient(url, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  ssl: true,  // Enforce SSL
-  sslValidate: false, // Don't validate the certificate
+  ssl: true
 });
 let collection = null; //we will give this a value after we connect to the database
 let users = null;

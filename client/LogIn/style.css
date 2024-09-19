@@ -1,58 +1,70 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin:0;
+    margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     background-image: url('https://images.squarespace-cdn.com/content/v1/5ff4ecbc632a80080a6a4b4c/7c96b82e-2c03-4ccc-be70-5196effd2d8a/pexels-pixabay-163444.jpg');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    color: #333; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
 }
 
-
-header{
-font-family: "Kanit", sans-serif;
-font-weight: 900;
-font-style: italic;
-font-size: 280%;
-color: #0f3850;
-letter-spacing: 5px;
+header {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 280%;
+    color: #0f3850;
+    letter-spacing: 5px;
 }
 
-h1{
-
+h1 {
     letter-spacing: .1em;
-    text-shadow: 
-      -5px 5px 0 #6ecf1f, 
-      -10px 15px 30px rgba(0, 0, 0, 0.9);
+    text-shadow:
+        -5px 5px 0 #6ecf1f,
+        -10px 15px 30px rgba(0, 0, 0, 0.9);
 }
-  
 
-#LogInPage{
+#LogInPage {
     display: flex;
     flex-direction: column;
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding: 1%;
     margin-bottom: 9%;
     width: 50%;
     min-height: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px; 
-    box-sizing: border-box; 
+    border-radius: 10px;
+    box-sizing: border-box;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: saturate(180%) blur(10px);
-
 }
 
-#logInDiv, #buttonDiv{
+/* Make the login page fully responsive */
+@media (max-width: 768px) {
+    #LogInPage {
+        width: 80%;  /* Reduce the width on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    #LogInPage {
+        width: 95%;  /* Full width on small mobile screens */
+    }
+    header {
+        font-size: 200%;  /* Reduce the font size for smaller screens */
+    }
+    h1 {
+        font-size: 150%;  /* Reduce the heading size */
+    }
+}
+
+#logInDiv, #buttonDiv {
     display: flex;
     flex-direction: column;
     border-radius: 5px;
@@ -60,7 +72,7 @@ h1{
     margin-bottom: 10px;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: saturate(180%) blur(10px);
-    box-shadow: 0 0 7px 7px rgba(56, 56, 56, 0.1); 
+    box-shadow: 0 0 7px 7px rgba(56, 56, 56, 0.1);
 }
 
 #buttonDiv button:first-child {
@@ -79,7 +91,7 @@ select {
 input[type="text"]:focus,
 select:focus {
     outline: none;
-    border-color: #007bff; 
+    border-color: #007bff;
 }
 
 button {
@@ -92,11 +104,11 @@ button {
     transition: background-color 0.3s ease;
 }
 
-#loginBtn{
+#loginBtn {
     background-color: #007bff;
 }
 
-#registerBtn{
+#registerBtn {
     background-color: #494949;
 }
 
@@ -108,4 +120,16 @@ button {
 label {
     font-size: 90%;
     margin-bottom: 5px;
+}
+
+/* Responsive adjustments for buttons and input fields */
+@media (max-width: 480px) {
+    button {
+        padding: 12px; /* Slightly larger padding for easier tapping on mobile */
+    }
+
+    input,
+    select {
+        width: 100%; /* Full width for mobile */
+    }
 }

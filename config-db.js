@@ -8,7 +8,7 @@
     //                     users: 'users'
     //                 };
     const db_info = {
-        url: `mongodb+srv://emmahorton03:wc8zzJKOdmpMDxE1@reunify.50cg9.mongodb.net/?retryWrites=true&w=majority&appName=reunify`,
+        url: `mongodb+srv://emmahorton03:wc8zzJKOdmpMDxE1@reunify.50cg9.mongodb.net/?retryWrites=true&w=majority&ssl=true&appName=reunify`,
         database: 'mainDatabase',
         collection: 'createRuns',
         users: 'users'

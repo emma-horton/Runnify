@@ -1,22 +1,26 @@
 {
-    "scripts": {
-      "test": "mocha tests",
-      "start": "node main.js",
-      "postinstall": "npm install"
-    },
-    "dependencies": {
-      "basic-auth": "^2.0.1",
-      "chai": "^4.3.7",
-      "chai-as-promised": "^7.1.1",
-      "chai-http": "^4.3.0",
-      "chain": "^0.4.0",
-      "express": "^4.19.2",
-      "express-basic-auth": "^1.2.1",
-      "express-session": "^1.18.0",
-      "jsdoc": "^4.0.2",
-      "mapbox-gl": "^3.2.0",
-      "mocha": "^10.2.0",
-      "mongodb": "^6.5.0",
-      "connect-mongo": "latest"
-    }
+  "name": "runnify",
+  "version": "1.0.0",
+  "description": "A full-stack web application developed to help runners organise social running activities and track their progress over time.",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha tests",
+    "start": "node main.js",
+    "postinstall": "npm install"
+  },
+  "dependencies": {
+    "basic-auth": "^2.0.1",
+    "chai": "^4.5.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-http": "^4.3.0",
+    "chain": "^0.4.0",
+    "connect-mongo": "^5.1.0",
+    "express": "^4.21.0",
+    "express-basic-auth": "^1.2.1",
+    "express-session": "^1.18.0",
+    "jsdoc": "^4.0.2",
+    "mapbox-gl": "^3.2.0",
+    "mocha": "^10.7.3",
+    "mongodb": "^6.9.0"
   }
+}

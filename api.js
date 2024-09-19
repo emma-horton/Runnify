@@ -658,7 +658,7 @@ var sampleData =
 
 //Build our url from our config file info
 const config = require('./config-db.js');
-const url = `mongodb+srv://emmahorton03:wc8zzJKOdmpMDxE1@reunify.50cg9.mongodb.net/?retryWrites=true&w=majority&appName=reunify`;;
+const url = process.env.MONGO_URI || `mongodb+srv://emmahorton03:wc8zzJKOdmpMDxE1@reunify.50cg9.mongodb.net/?retryWrites=true&w=majority&ssl=true&appName=reunify`;
 const client = new MongoClient(url);
 let collection = null; //we will give this a value after we connect to the database
 let users = null;
@@ -666,7 +666,6 @@ let users = null;
 //Set up our app
 const app = express();
 const API_PORT = process.env.PORT || 24475;
-const mongoURI =  `mongodb+srv://emmahorton03:wc8zzJKOdmpMDxE1@reunify.50cg9.mongodb.net/?retryWrites=true&w=majority&appName=reunify`;
 
 // Configure session to use MongoDB for session store
 app.use(session({

@@ -13,7 +13,8 @@ const session = require('express-session')
 //Build our url from our config file info
 // Uncomment if running locally 
 //const config = require('./config-db.js');
-const url = process.env.MONGO_URI || config.url;
+//const url = process.env.MONGO_URI || config.url;
+const url = process.env.MONGO_URI;
 const client = new MongoClient(url, {
   useNewUrlParser: true,
   useUnifiedTopology: true,

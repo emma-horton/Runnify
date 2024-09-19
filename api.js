@@ -306,39 +306,6 @@ app.get('/logout', (req, res) => {
 
 app.use(express.static('client'))
 
-// // Connecting to the database
-// function runApp() {
-//   MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
-//       .then(client => {
-//           console.log('Connected to Database');
-//           const db = client.db();
-
-//           // Initializing collections
-//           const users = db.collection('users');
-//           const createRuns = db.collection('createRuns');
-
-//           // Example of setting up a route after a successful connection
-//           app.get('/', (req, res) => {
-//               users.find().toArray()
-//                   .then(results => {
-//                       res.json(results);
-//                   })
-//                   .catch(error => console.error('Error fetching data:', error));
-//           });
-
-//           // Start the server
-//           app.listen(API_PORT, () => {
-//               console.log(`Server running on port ${API_PORT}`);
-//           });
-//       })
-//       .catch(error => {
-//           console.error('Failed to connect to the database:', error);
-//           process.exit(1); // Exit the process with an error code (1) if the connection fails
-//       });
-// }
-
-// module.exports = { runApp };
-
 
 //Connecting to database
 function runApp() {

@@ -5,8 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "mocha tests",
-    "start": "node main.js",
-    "postinstall": "npm install"
+    "start": "node main.js"
   },
   "dependencies": {
     "basic-auth": "^2.0.1",

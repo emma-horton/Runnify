@@ -89,17 +89,6 @@ npm run test
 * **Node.js**: Processes HTTP requests from the frontend (e.g., user logins, creating new runs, liking posts) and manages interactions with external APIs like OpenWeather and GeoCoding. It also facilitates communication with MongoDB for storing and retrieving data.
 * **MongoDB**: Stores persistent data, including user information (e.g., usernames, passwords, preferences) and run-related data (e.g., route, pace, start time, distance, participants), as well as interactions like comments and likes.
 
-## Try it Out
-<div id="tryout-section"></div>
-
-[Click here to try it out](https://runnify-web-f2150b469ce7.herokuapp.com)
-
-*Currently only available on desktop.*
-
-### Login Details
-- **Username**: Claire
-- **Password**: claire
-
 ## Acknowledgements
 * [OpenWeather API](https://openweathermap.org/api): Provides weather information used to predict conditions for future runs.
 * [GeoCoding API](https://openweathermap.org/api/geocoding-api): Supplies the longitude and latitude of the starting point, allowing the plotting of optimal running routes.
@@ -118,3 +107,6 @@ npm run test
 | Phil Kolling | External weather API, Map API, Algorithm, Database Setup, Register Page, Login Page, Create endpoints on server, Helper Functions. |
 | Reanne Sutton|External weather API, Database Setup, Register Page, Login Page, Styling of Pages, Create endpoints on server, Sessions. |
 
+## Login Details
+- **Username**: Claire
+- **Password**: claire

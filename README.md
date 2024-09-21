@@ -6,7 +6,7 @@
 ![D3 Badge](https://img.shields.io/badge/D3-F9A03C?logo=d3.js&logoColor=white&style=flat)
 # Runnify
 A full-stack web application developed to help runners organise social running activities and track their progress over time.
-[Try it out](https://runnify-web-f2150b469ce7.herokuapp.com)
+* [Try it out](https://runnify-web-f2150b469ce7.herokuapp.com)
 * Username: Claire
 * Password: claire
 ## Purpose 

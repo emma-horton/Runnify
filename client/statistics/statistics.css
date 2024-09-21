@@ -106,9 +106,6 @@ header{
 
 }
 
-
-
-
 #selectYear {
     position: absolute;
     left: 0px;
@@ -404,4 +401,73 @@ align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: saturate(130%) blur(10px);
+    margin-top: 100px; /* Push the whole div2 container down */
+}
+
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 1300px) {
+    .div2 {
+        display: flex;
+        flex-direction: row; /* Ensure overall layout stacks vertically */
+        padding: 2%;
+        align-items: center; /* Center the elements */
+    }
+
+    /* Wrap charts inside a new flex container to make them sit side-by-side */
+    .chart-container {
+        display: flex;
+        width: 100%; /* Full width for the chart container */
+        justify-content: space-between; /* Space between the charts */
+        margin-bottom: 20px; /* Space between charts and the table */
+    }
+
+    #barChart, #scatterChart {
+        width: 48%; /* Each chart takes roughly half the width */
+        min-width: 250px; /* Prevent charts from becoming too small */
+    }
+
+    #bestRunsTable {
+        width: 100%; /* Table takes full width below the charts */
+        margin-top: 20px; /* Add space between the charts and the table */
+    }
+
+    h3.full-width {
+        display: none; /* Hide the h3 element */
+    }
+}
+
+
+/* Hide h3 for screens below 1100px */
+@media screen and (max-width: 1100px) {
+    #bestRunsTable {
+        display: none; 
+    }
+}
+
+/* Responsive Design for Screens 780px and below */
+@media screen and (max-width: 780px) {
+    .div2 {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        padding: 2%;
+        align-items: center; /* Center the elements */
+        overflow: visible; /* Ensure the content doesn't get clipped */
+        margin-top: 450px;
+    }
+
+    #barChart, #scatterChart {
+        width: 100%; /* Make charts take full width on small screens */
+        height: auto; /* Allow the height to adjust based on content */
+        max-height: 100%; /* Ensure the graph height fits within its container */
+    }
+
+    /* Optional: Adjust the height of the container if necessary */
+    .chart-container {
+        display: flex;
+        flex-direction: column; /* Stack charts vertically on small screens */
+        width: 100%;
+        height: auto; /* Ensure charts take up the available height */
+        margin-bottom: 20px;
+    }
 }

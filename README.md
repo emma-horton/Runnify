@@ -6,6 +6,9 @@
 ![D3 Badge](https://img.shields.io/badge/D3-F9A03C?logo=d3.js&logoColor=white&style=flat)
 # Runnify
 A full-stack web application developed to help runners organise social running activities and track their progress over time.
+[Try it out](https://runnify-web-f2150b469ce7.herokuapp.com)
+* Username: Claire
+* Password: claire
 ## Purpose 
 This project was developed by a group of five students as part of our coursework for the 'Masters Programming Projects' module at the University of St Andrews. The full-stack application uses JavaScript, HTML, CSS, Node.js, and MongoDB to build a responsive and interactive platform, enabling communication between users and persistent data storage.
 

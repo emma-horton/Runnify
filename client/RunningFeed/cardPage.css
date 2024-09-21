@@ -23,9 +23,11 @@ body::after {
 }
 
 .row {
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Ensures the items wrap on smaller screens */
     justify-content: center;
-    margin-top: 100px;
+    align-items: center;
 }
 
 .card {
@@ -674,6 +676,7 @@ header{
 }
 
 /* filter area */
+/* Default filter container styles (for larger desktops) */
 .filter-container {
     position: fixed;
     top: 140px;
@@ -687,6 +690,7 @@ header{
     border-radius: 10px;
     padding: 20px;
     animation: fadeInDown 0.5s ease-out;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .filter-container.show {
@@ -697,6 +701,62 @@ header{
     transform: scale(1.1);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
+
+/* For smaller screens (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .filter-container {
+        position: relative; /* Change position to relative */
+        width: 100%;
+        left: 0;
+        top: 0;
+        margin-bottom: 20px; /* Add space between filter and card */
+        padding: 15px;
+        box-shadow: none; /* Remove box shadow */
+        transform: none; /* Remove translation effect */
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .filter-container.show {
+        transform: none; /* No translate effect on mobile */
+    }
+
+    .filter-container:hover {
+        transform: none; /* Disable hover scale effect */
+    }
+
+    .row {
+        flex-direction: column; /* Stack filter and card vertically */
+        align-items: stretch;
+    }
+}
+/* For tablets and smaller screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .filter-container {
+        position: relative; /* Change position to relative */
+        width: 100%;
+        left: 0;
+        top: 0;
+        margin-bottom: 20px; /* Add space between filter and card */
+        padding: 15px;
+        box-shadow: none; /* Remove box shadow */
+        transform: none; /* Remove translation effect */
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .filter-container.show {
+        transform: none; /* No translate effect on mobile */
+    }
+
+    .filter-container:hover {
+        transform: none; /* Disable hover scale effect */
+    }
+
+    .row {
+        flex-direction: column; /* Stack filter and card vertically */
+        align-items: stretch;
+    }
+}
+
 
 /* sort */
 .sorting-area {
@@ -1034,3 +1094,70 @@ button:hover {
         transform: translateY(0);
     }
 }
+
+/* Default styles (for larger screens like desktops) are already defined */
+
+/* Tablet screen (768px and below) */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 80%;
+        height: auto;
+        margin: 20px;
+    }
+
+    .left_part, .right_part {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .data_item {
+        font-size: 0.8em;
+    }
+}
+
+/* Mobile screen (480px and below) */
+@media screen and (max-width: 480px) {
+    body {
+        background-size: cover;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px;
+        padding: 1em;
+    }
+
+    .card_image {
+        height: 12em;
+    }
+
+    header {
+        font-size: 1em;
+        margin-left: 20px;
+    }
+
+    .left_part, .right_part {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .filter-container {
+        left: 10px;
+    }
+
+    .navigation-card {
+        background-color: rgba(255, 255, 255, 0.9);
+        /* flex-direction: column;
+        gap: 10px; */
+    } 
+
+    .join, .likes, .comments, .people {
+        width: 100%;
+    }
+
+    .btns {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+

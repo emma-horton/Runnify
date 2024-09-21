@@ -5,10 +5,15 @@
 ![MongoDB Badge](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white&style=flat)
 ![D3 Badge](https://img.shields.io/badge/D3-F9A03C?logo=d3.js&logoColor=white&style=flat)
 # Runnify
-A full-stack web application developed to help runners organise social running activities and track their progress over time.
+**Runnify** is a full-stack web application developed to help runners organize social running activities and track their progress over time.
+
+[Click here to try it out](https://runnify-web-f2150b469ce7.herokuapp.com)  
+*Currently only available on desktop.*
 
 <a href="#tryout-section">
-    <button>Try it out</button>
+    <button style="background-color: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+        Click here for login details
+    </button>
 </a>
 
 ## Purpose 
@@ -86,6 +91,7 @@ npm run test
 
 ## Try it Out
 <div id="tryout-section"></div>
+
 [Click here to try it out](https://runnify-web-f2150b469ce7.herokuapp.com)
 
 *Currently only available on desktop.*

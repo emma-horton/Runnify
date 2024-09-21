@@ -7,6 +7,10 @@
 # Runnify
 A full-stack web application developed to help runners organise social running activities and track their progress over time.
 
+<a href="#tryout-section">
+    <button>Try it out</button>
+</a>
+
 ## Purpose 
 This project was developed by a group of five students as part of our coursework for the 'Masters Programming Projects' module at the University of St Andrews. The full-stack application uses JavaScript, HTML, CSS, Node.js, and MongoDB to build a responsive and interactive platform, enabling communication between users and persistent data storage.
 
@@ -81,7 +85,7 @@ npm run test
 * **MongoDB**: Stores persistent data, including user information (e.g., usernames, passwords, preferences) and run-related data (e.g., route, pace, start time, distance, participants), as well as interactions like comments and likes.
 
 ## Try it Out
-
+<div id="tryout-section"></div>
 [Click here to try it out](https://runnify-web-f2150b469ce7.herokuapp.com)
 
 *Currently only available on desktop.*

@@ -32,26 +32,30 @@ This project was developed by a group of five students as part of our coursework
 <!--     <figcaption>Figure 1: User login and sign in page.</figcaption> -->
 </figure>
 
+### Create runs page 
+* New runs can be created by specifying pace, start time, location, and distance. The app generates an optimized route and provides the expected weather forecast for the run.
+  
+<figure>
+    <img src="images/create_run.png" alt="Create Run Page" width="500">
+<!--     <figcaption>Figure 2: User create run page.</figcaption> -->
+</figure>
+
 ### Feed page 
 * The feed page displays all runs, including meeting points, pace, routes on a map, participants, likes, and comments.
 * Runs can be joined, liked, and commented on directly from the feed page.
 * Sorting options by pace and distance are available to organize the runs on the feed.
   
 <figure style="text-align: center; display: block;">
-    <img src="images/feed_page.png" alt="Feed Page" width="500">
-    <!-- <figcaption>Figure 2: The main feed page showing user activity.</figcaption> -->
-</figure>
-
-### Create runs page 
-* New runs can be created by specifying pace, start time, location, and distance. The app generates an optimized route and provides the expected weather forecast for the run.
-  
-<figure>
-    <img src="images/create_run.png" alt="Create Run Page" width="500">
-<!--     <figcaption>Figure 3: User create run page.</figcaption> -->
+    <img src="images/feedpage.png" alt="Feed Page" width="500">
+    <!-- <figcaption>Figure 3: The main feed page showing user activity.</figcaption> -->
 </figure>
 
 ### Statistics page 
 * Fitness goals can be updated, and activity trends tracked through the statistics page.
+<figure>
+    <img src="images/statistics.png" alt="Statistics Page" width="500">
+<!--     <figcaption>Figure 4: User profile page.</figcaption> -->
+</figure>
 
 ## Usage
 #### 1. Install modules and dependancies

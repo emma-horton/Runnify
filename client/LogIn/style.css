@@ -45,25 +45,6 @@ h1 {
     backdrop-filter: saturate(180%) blur(10px);
 }
 
-/* Make the login page fully responsive */
-@media (max-width: 768px) {
-    #LogInPage {
-        width: 80%;  /* Reduce the width on tablets */
-    }
-}
-
-@media (max-width: 480px) {
-    #LogInPage {
-        width: 95%;  /* Full width on small mobile screens */
-    }
-    header {
-        font-size: 200%;  /* Reduce the font size for smaller screens */
-    }
-    h1 {
-        font-size: 150%;  /* Reduce the heading size */
-    }
-}
-
 #logInDiv, #buttonDiv {
     display: flex;
     flex-direction: column;
@@ -122,14 +103,22 @@ label {
     margin-bottom: 5px;
 }
 
-/* Responsive adjustments for buttons and input fields */
-@media (max-width: 480px) {
-    button {
-        padding: 12px; /* Slightly larger padding for easier tapping on mobile */
+/* Style the mobile message */
+.mobile-message {
+    display: none;
+    text-align: center;
+    margin-top: 20%;
+    font-size: 24px;
+    color: #0f3850;
+}
+
+/* Hide the content and show the message on small screens */
+@media only screen and (max-width: 768px) {
+    #LogInPage, header, #logInDiv, #buttonDiv, input, button {
+        display: none;
     }
 
-    input,
-    select {
-        width: 100%; /* Full width for mobile */
+    .mobile-message {
+        display: block;
     }
 }

@@ -6,9 +6,7 @@
 ![D3 Badge](https://img.shields.io/badge/D3-F9A03C?logo=d3.js&logoColor=white&style=flat)
 # Runnify
 A full-stack web application developed to help runners organise social running activities and track their progress over time.
-* [Try it out](https://runnify-web-f2150b469ce7.herokuapp.com)
-* Username: Claire
-* Password: claire
+
 ## Purpose 
 This project was developed by a group of five students as part of our coursework for the 'Masters Programming Projects' module at the University of St Andrews. The full-stack application uses JavaScript, HTML, CSS, Node.js, and MongoDB to build a responsive and interactive platform, enabling communication between users and persistent data storage.
 
@@ -81,6 +79,16 @@ npm run test
 * **CSS**: Provides styling and layout for a visually appealing and responsive user interface.
 * **Node.js**: Processes HTTP requests from the frontend (e.g., user logins, creating new runs, liking posts) and manages interactions with external APIs like OpenWeather and GeoCoding. It also facilitates communication with MongoDB for storing and retrieving data.
 * **MongoDB**: Stores persistent data, including user information (e.g., usernames, passwords, preferences) and run-related data (e.g., route, pace, start time, distance, participants), as well as interactions like comments and likes.
+
+## Try it Out
+
+[Click here to try it out](https://runnify-web-f2150b469ce7.herokuapp.com)
+
+*Currently only available on desktop.*
+
+### Login Details
+- **Username**: Claire
+- **Password**: claire
 
 ## Acknowledgements
 * [OpenWeather API](https://openweathermap.org/api): Provides weather information used to predict conditions for future runs.

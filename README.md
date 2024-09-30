@@ -116,4 +116,4 @@ npm run test
 - **Password**: claire
 
 ## Project Grade 
-19/20 (95%)
+Grade: 19/20 (95%)

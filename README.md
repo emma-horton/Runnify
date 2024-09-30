@@ -114,3 +114,6 @@ npm run test
 ## Login Details
 - **Username**: Claire
 - **Password**: claire
+
+## Project Grade 
+19/20 (95%)

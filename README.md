@@ -108,8 +108,8 @@ npm run test
 | Teja Garrido | Graphs Statistics, Styling of Pages. |
 | Emma Horton  | Testing Server Endpoints, Calendar for Runs, Database Setup, Styling of Pages, Create endpoints on server. |
 | Harry Huang  | Running Feed. |
-| Phil Kolling | External weather API, Map API, Algorithm, Database Setup, Register Page, Login Page, Create endpoints on server, Helper Functions. |
-| Reanne Sutton|External weather API, Database Setup, Register Page, Login Page, Styling of Pages, Create endpoints on server, Sessions. |
+| Phil Kolling | External weather API, Map API, Algorithm, Register Page, Login Page, Create endpoints on server, Helper Functions. |
+| Reanne Sutton|External weather API, Register Page, Login Page, Styling of Pages, Create endpoints on server, Sessions. |
 
 ## Login Details
 - **Username**: Claire

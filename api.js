@@ -3,9 +3,9 @@
 //Installing node modules
 // const MongoClient = require('mongodb').MongoClient;
 // const { ObjectId } = require('mongodb');
-const MongoClient = require('mongodb').MongoClient;
-const MongoStore = require('connect-mongo');
-const { ObjectId } = require('mongodb');
+const MongoClient = require('mongodb').MongoClient; // connect to a MongoDB database
+const MongoStore = require('connect-mongo'); // store user session data in MongoDB
+const { ObjectId } = require('mongodb'); // special ID format
 const express = require('express');
 const session = require('express-session')
 

@@ -15,42 +15,35 @@
 This project was developed by a group of five students as part of our coursework for the 'Masters Programming Projects' module at the University of St Andrews. The full-stack application uses JavaScript, HTML, CSS, Node.js, and MongoDB to build a responsive and interactive platform, enabling communication between users and persistent data storage.
 
 ## Features 
-### Login and sign up page 
+### 🔑 **Sign Up and Log In**  
 *	Enables users to sign up and log in, granting access to the platform’s features.
-<figure style="display: flex; flex-direction: column; align-items: center;">
-    <!-- Flex container for images only -->
-    <div style="display: flex; justify-content: center;">
-        <img src="images/login_page.png" alt="Login Page" width="400">
-        <img src="images/sign_up_page.png" alt="Sign Up Page" width="400">
-    </div>
-    <!-- Caption below images -->
-<!--     <figcaption>Figure 1: User login and sign in page.</figcaption> -->
-</figure>
+<div align="center">
+    <img src="images/login_page.png" alt="Login Page" width="400">
+    <img src="images/sign_up_page.png" alt="Sign-Up Page" width="400">
+</div>
 
-### Create runs page 
+### 🏃‍♂️ **Create Runs**
 * Allows users to create new runs by specifying details such as pace, start time, location, and distance.
 * Automatically generates an optimized route and provides a weather forecast for the run.
-<figure>
+<div align="center">
     <img src="images/create_run.png" alt="Create Run Page" width="500">
-<!--     <figcaption>Figure 2: User create run page.</figcaption> -->
-</figure>
+</div>
 
-### Feed page 
+### 📰 **Discover Runs on the Feed Page**
 * Displays all available runs with details, including meeting points, pace, mapped routes, participants, likes, and comments.
 * Users can join, like, and comment on runs directly from the feed.
 * Offers sorting options by pace and distance to better organize the displayed runs.
   
-<figure style="text-align: center; display: block;">
+<div align="center">
     <img src="images/feedpage.png" alt="Feed Page" width="500">
-    <!-- <figcaption>Figure 3: The main feed page showing user activity.</figcaption> -->
-</figure>
+</div>
 
-### Statistics page 
+### 📊 **Track Progress with Statistics**
 * Provides functionality to update fitness goals and track activity trends over time.
-<figure>
+<div align="center">
     <img src="images/statistics.png" alt="Statistics Page" width="500">
-<!--     <figcaption>Figure 4: User profile page.</figcaption> -->
-</figure>
+</div>
+
 
 ## Usage
 #### 1. Install modules and dependancies

@@ -12,7 +12,6 @@
 🌐 **[Try Runnify now!](https://runnify-web-f2150b469ce7.herokuapp.com)**  
 🚨 *Note: Desktop-only access for now!*
 
----
 
 ## 🎯 **About Runnify**
 Imagine a place where runners connect, collaborate, and conquer their fitness goals together. That’s what **Runnify** is all about! Designed and developed by a team of five students at the University of St Andrews, this full-stack web application serves as a social hub for runners to:
@@ -21,7 +20,6 @@ Imagine a place where runners connect, collaborate, and conquer their fitness go
 - Stay motivated with community support.  
 - Track fitness goals and progress.
 
----
 
 ## ✨ **What Can You Do on Runnify?**
 ### 🔑 **Sign Up and Log In**  
@@ -32,7 +30,6 @@ Your journey starts here! Create an account or log in to unlock all the features
     <img src="images/sign_up_page.png" alt="Sign-Up Page" width="400">
 </div>
 
----
 
 ### 🏃‍♂️ **Create Runs**
 - Specify your desired **pace**, **start time**, **location**, and **distance**.  
@@ -42,7 +39,6 @@ Your journey starts here! Create an account or log in to unlock all the features
     <img src="images/create_run.png" alt="Create Run Page" width="500">
 </div>
 
----
 
 ### 📰 **Discover Runs on the Feed Page**
 - Browse runs with all the details: **routes**, **meeting points**, **pace**, and **participants**.  
@@ -53,7 +49,6 @@ Your journey starts here! Create an account or log in to unlock all the features
     <img src="images/feedpage.png" alt="Feed Page" width="500">
 </div>
 
----
 
 ### 📊 **Track Progress with Statistics**
 - Update your fitness goals regularly.  
@@ -62,8 +57,6 @@ Your journey starts here! Create an account or log in to unlock all the features
 <div align="center">
     <img src="images/statistics.png" alt="Statistics Page" width="500">
 </div>
-
----
 
 ## 🚀 **How to Use Runnify**
 
@@ -100,8 +93,6 @@ Then, execute test cases:
 npm run test
 ```
 
----
-
 ## 🛠️ **Technologies Behind Runnify**
 Here’s what powers the magic:
 
@@ -111,7 +102,6 @@ Here’s what powers the magic:
 * **Node.js**: Processes HTTP requests from the frontend (e.g., user logins, creating new runs, liking posts) and manages interactions with external APIs like OpenWeather and GeoCoding. It also facilitates communication with MongoDB for storing and retrieving data.
 * **MongoDB**: Stores persistent data, including user information (e.g., usernames, passwords, preferences) and run-related data (e.g., route, pace, start time, distance, participants), as well as interactions like comments and likes.
 
----
 
 ## 🌟 **Acknowledgements**
 A big shoutout to the following tools and APIs for making Runnify possible:  
@@ -123,7 +113,6 @@ A big shoutout to the following tools and APIs for making Runnify possible:
 * [Sessions](https://www.npmjs.com/package/express-session): Tracks user activity across different pages to maintain session state.
 * [Mocha](https://mochajs.org/) & [Chai](https://www.chaijs.com/): Perform automated testing to ensure the application’s functionality and reliability.
 
----
 
 ## 👥 **Contributors**
 | **Name**         | **Contributions**                                                                                      |
@@ -134,13 +123,11 @@ A big shoutout to the following tools and APIs for making Runnify possible:
 | **Phil Kolling**  | APIs (Weather, Map), algorithms, register/login, helper functions, server endpoints.                  |
 | **Reanne Sutton** | APIs (Weather), styling, sessions, register/login, server endpoints.                                  |
 
----
 
 ## 🔐 **Login Details**
 👤 **Username**: Claire  
 🔑 **Password**: claire  
 
----
 
 ## 🏅 **Our Achievement**
 🌟 Final Grade: **19/20 (95%)**

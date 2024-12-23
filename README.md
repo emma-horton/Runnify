@@ -4,16 +4,23 @@
 ![CSS Badge](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=white&style=flat)
 ![MongoDB Badge](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white&style=flat)
 ![D3 Badge](https://img.shields.io/badge/D3-F9A03C?logo=d3.js&logoColor=white&style=flat)
-# Runnify
-**Runnify** is a full-stack web application developed to help runners organize social running activities and track their progress over time.
+# **Runnify**
 
-🌐 **[Try Runnify now!](https://runnify-web-f2150b469ce7.herokuapp.com)**  
-🚨 *Note: Desktop-only access for now!*
+Runnify is a full-stack web application designed to demonstrate advanced programming and software development skills. It showcases the ability to build an interactive platform for organizing social runs and tracking fitness progress.
+
+## **Project Overview**
+
+Developed as part of the 'Masters Programming Projects' module at the University of St Andrews, Runnify was created by a team of five students to explore the development of responsive, user-focused web applications. The project leverages technologies including **JavaScript**, **HTML**, **CSS**, **Node.js**, and **MongoDB**, highlighting expertise in both frontend and backend development.
 
 
-## Purpose 
-This project was developed by a group of five students as part of our coursework for the 'Masters Programming Projects' module at the University of St Andrews. The full-stack application uses JavaScript, HTML, CSS, Node.js, and MongoDB to build a responsive and interactive platform, enabling communication between users and persistent data storage.
+## **Purpose**
 
+This project serves as a demonstration of technical and collaborative skills in:
+- Full-stack development
+- Data persistence and user interaction
+- Responsive design and usability
+
+Runnify isn’t a live product but a representation of how modern technologies can be used to create engaging digital experiences.
 ## Features 
 ### 🔑 **Sign Up and Log In**  
 *	Enables users to sign up and log in, granting access to the platform’s features.

@@ -8,6 +8,9 @@
 
 Runnify is a full-stack web application designed to demonstrate advanced programming and software development skills. It showcases the ability to build an interactive platform for organizing social runs and tracking fitness progress.
 
+🌐 **[View the project here](https://runnify-web-f2150b469ce7.herokuapp.com)**  
+*Note: Desktop-only access for now*
+
 ## **Project Overview**
 
 Developed as part of the 'Masters Programming Projects' module at the University of St Andrews, Runnify was created by a team of five students to explore the development of responsive, user-focused web applications. The project leverages technologies including **JavaScript**, **HTML**, **CSS**, **Node.js**, and **MongoDB**, highlighting expertise in both frontend and backend development.
@@ -51,36 +54,6 @@ Runnify isn’t a live product but a representation of how modern technologies c
     <img src="images/statistics.png" alt="Statistics Page" width="500">
 </div>
 
-
-## Usage
-#### 1. Install modules and dependancies
-```bash
-pip install node
-npm install express
-npm install express-session
-npm install mocha chai
-npm install mongodb
-```
-#### 2. Connect to the database
-```bash
-$HOME/Documents/mongodb/bin/mongod --dbpath $HOME/Documents/mongodb_data --logpath=$HOME/Documents/mongodb/mongodb.log --auth --port $(id -u) &
-```
-#### 3. Start server
-```bash
-node main.js
-```
-#### (Optional) To run tests 
-##### Firstly, drop all data in the database 
-``` bash 
-mongosh --port $(id -u) -u webuser --authenticationDatabase admin -p
-use mainDatabase
-db.users.drop() 
-db.createRuns.drop()
-```
-##### Then, run the chai test cases
-``` bash 
-npm run test
-```
 ## Technologies Used 
 * **JavaScript**: Handles the application logic, retrieves data from the OpenWeather and GeoCoding APIs, and displays running routes using MapBox.
 * **HTML**: Structures the web application and ensures a well-organized layout.

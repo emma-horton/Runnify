@@ -125,7 +125,7 @@ A big shoutout to the following tools and APIs for making Runnify possible:
 
 ---
 
-## 👥 **Contributers**
+## 👥 **Contributors**
 | **Name**         | **Contributions**                                                                                      |
 |-------------------|-------------------------------------------------------------------------------------------------------|
 | **Teja Garrido**  | Graphs, statistics, page styling.                                                                     |
